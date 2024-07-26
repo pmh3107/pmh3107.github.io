@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		buttonEl.addEventListener("click", () => {
 			let sequence = inputEl.value.replace(/[^1-4]/g, "");
+			inputEl.value = sequence;
 			if (sequence) {
 				playSequence(sequence);
 			} else {
