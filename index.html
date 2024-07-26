@@ -2,14 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hien Phan | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drum Kits</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .btn-drumKit {
+        padding: 30px 50px;
+        background-color: white;
+        border: none;
+        margin: 10px;
+        font-size: 35px;
+        min-width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-image: url("images/tom.png");
+        background-size: cover;
+        color: white;
+        text-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+      .btn-drumKit:hover {
+        color: rgb(255, 122, 145);
+      }
+      .btn-drumKit:active {
+        transform: scale(0.9);
+    }
+      .btn-drumKit3:active {
+        background-size: 105%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Hien Phan</h1>
-    <p>Hi, I'm Hien. I'm a student at <a href="https://www.ut.edu.vn/">UTH</a>.</p>
+  <div id="container"></div>
+  <script src="src/js/index.js"></script>
 </body>
 
 </html>
