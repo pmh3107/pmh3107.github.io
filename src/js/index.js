@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			inputEl.value = sequence;
 			if (sequence) {
 				playSequence(sequence);
+				inputEl.value = "";
 			} else {
 				alert("Please enter a valid sequence");
 			}
